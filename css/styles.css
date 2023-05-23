@@ -158,10 +158,6 @@ body {
 }
 
 
-
-
-
-
 .work-list-img,
 .team-img,
 .project-foto {
@@ -170,9 +166,13 @@ body {
   height: auto;
 }
 
-/* Header */
+/**
+  |============================
+  | Header Section
+  |============================
+*/
 
-.page-header {
+.header {
   min-width: 320px;
   border-bottom: 1px solid var(--color-cornflower);
   box-shadow: var(--header-shadow);
@@ -194,14 +194,14 @@ body {
   }
 }
 @media only screen and (min-width: 768px) {
-  .navigation {
+  .header-nav {
     display: flex;
     align-items: center;
   }
 }
 @media only screen and (min-width: 1158px) {
   .header-container,
-  .navigation {
+  .header-nav {
     display: flex;
     align-items: center;
     padding: 0 15px;
