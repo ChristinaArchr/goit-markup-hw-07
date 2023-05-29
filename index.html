@@ -25,7 +25,7 @@
     <!-- Header -->
     <header class="header">
       <div class="header-container container">
-        <nav class="header-nav">
+        <nav class="head-nav">
           <a class="logo header-logo link" href="./index.html"
             >Web<span class="logo-part-header">Studio</span></a
           >
@@ -50,11 +50,12 @@
         <div class="mobile-menu-container">
           <button
             class="burger-menu js-open-menu"
+            type="button"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
             <svg class="burger-menu-icon" width="32" height="22">
-              <use href="./images/icons.svg#mobile-burger-menu""></use>
+              <use href="./images/icons.svg#mobile-burger-menu"></use>
             </svg>
           </button>
         </div>
@@ -62,10 +63,11 @@
     </header>
     <main>
       <!-- Hero -->
+
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn" data-modal-open>Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Features -->
@@ -124,7 +126,7 @@
           </ul>
         </div>
       </section>
-      <!-- Work -->
+      <!-- What Are We Doing Section -->
       <section class="work section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
@@ -132,33 +134,48 @@
             <li class="work-list-item"
               ><img
                 class="work-list-img"
+                srcset="
+                  ./images/what-are-we-doing/img-1.jpg 1x,
+                  ./images/what-are-we-doing/img-1@2x  2x
+                "
                 src="./images/what-are-we-doing/img-1.jpg"
                 alt="Data Analytics"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="work-list-item"
               ><img
                 class="work-list-img"
+                srcset="
+                  ./images/what-are-we-doing/img-2.jpg 1x,
+                  ./images/what-are-we-doing/img-2@2x  2x
+                "
                 src="./images/what-are-we-doing/img-2.jpg"
                 alt="Mobile Data"
                 width="360"
                 height="300"
+                loading="lazy"
             /></li>
             <li class="work-list-item"
               ><img
                 class="work-list-img"
+                srcset="
+                  ./images/what-are-we-doing/img-3.jpg 1x,
+                  ./images/what-are-we-doing/img-3@2x  2x
+                "
                 src="./images/what-are-we-doing/img-3.jpg"
                 alt="PC image"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
         </div>
       </section>
-      <!-- Our Team section -->
+      <!-- Team -->
       <section class="team section">
         <div class="team-container container">
           <h2 class="section-title">Our Team</h2>
@@ -166,10 +183,12 @@
             <li class="team-card">
               <img
                 class="team-img"
+                srcset="./images/our-team/mark-guerrero.jpg 1x, ./images/our-team/mark-guerrero@2x.jpg 2x"
                 src="./images/our-team/mark-guerrero.jpg"
                 alt="Mark Guerrero's foto"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-card-container">
                 <h3 class="team-title title">Mark Guerrero</h3>
@@ -233,10 +252,12 @@
             <li class="team-card">
               <img
                 class="team-img"
+                srcset="./images/our-team/tom-ford.jpg 1x, ./images/our-team/tom-ford@2x.jpg 2x"
                 src="./images/our-team/tom-ford.jpg"
                 alt="Tom Ford's foto"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-card-container">
                 <h3 class="team-title title">Tom Ford</h3>
@@ -300,9 +321,11 @@
             <li class="team-card">
               <img
                 class="team-img"
+                srcset="./images/our-team/camila-garcia.jpg 1x, ./images/our-team/camila-garcia@2x.jpg 2x"
                 src="./images/our-team/camila-garcia.jpg"
                 alt="Camila Garcia's foto"
                 width="264"
+                loading="lazy"
                 height="260"
               />
               <div class="team-card-container">
@@ -367,9 +390,11 @@
             <li class="team-card">
               <img
                 class="team-img"
+                srcset="./images/our-team/daniel-wilson.jpg 1x, ./images/our-team/daniel-wilson@2x.jpg 2x"
                 src="./images/our-team/daniel-wilson.jpg"
                 alt="Daniel Wilson's foto"
                 width="264"
+                loading="lazy"
                 height="260"
               />
               <div class="team-card-container">
@@ -434,7 +459,7 @@
           </ul>
         </div>
       </section>
-      <!-- Customers Section -->
+      <!-- Customers -->
       <section class="customers section">
         <div class="customers-container container">
           <h2 class="section-title customers-title">Customers</h2>
@@ -603,18 +628,18 @@
 
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-toggle js-close-menu" type="button">
         <svg class="icon-close-mobile" width="8" height="8">
           <use href="./images/icons.svg#close-cross"></use>
         </svg>
       </button>
       <ul class="mobile-menu list">
-        <li><a class="mobile-link link" href="./index.html">Studio</a></li>
+        <li><a class="mobile-link active-mobile-link link" href="./index.html">Studio</a></li>
         <li><a class="mobile-link link" href="./portfolio.html">Portfolio</a></li>
         <li><a class="mobile-link colored-mobile-link link" href="">Contacts</a></li>
       </ul>
       <ul class="mobile-contacts list">
-        <li class="mobile-contacts-item"
+        <li class="mobile-contacts-item mobile-tel-item"
           ><a class="mobile-contacts-link mobile-tel-link link" href="tel:+110001111111"
             >+11 (000) 111-11-11</a
           >
